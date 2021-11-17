@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex">
             <a class="header-brand" href="./index.html">
-                E-Koperasi
+                Primkopti
             </a>
             <div class="d-flex order-lg-2 ml-auto">
                 <div class="dropdown">
@@ -41,16 +41,19 @@
                         <a href="{{ route('members.index') }}" class="nav-link"><i class="fe fe-users"></i> Anggota</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('deposits.index') }}" class="nav-link"><i class="fe fe-dollar-sign"></i> Setoran</a>
+                        <a href="" class="nav-link"><i class="fe fe-dollar-sign"></i> Transaksi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('withdrawals.index') }}" class="nav-link"><i class="fe fe-hash"></i> Withdraw</a>
+                        <a href="{{ route('deposits.index') }}" class="nav-link"><i class="fe fe-box"></i> Simpanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('withdrawals.index') }}" class="nav-link"><i class="fe fe-hash"></i>Penarikan</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('mutations') }}" class="nav-link"><i class="fe fe-printer"></i> List Mutasi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('bankinterests') }}" class="nav-link"><i class="fe fe-box"></i> Hitung Bunga</a>
+                        <a href="{{ url('bankinterests') }}" class="nav-link"><i class="fe fe-box"></i>Simpanan Sukareka</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('profile') }}" class="nav-link"><i class="fe fe-user"></i> Profil</a>

@@ -30,7 +30,7 @@
                                 <td>
                                     <div>{{ $mutation->member->nama }}</div>
                                     <div class="small text-muted">
-                                        NIK: {{ $mutation->member->nik }}
+                                        ID: {{ $mutation->member->nik }}
                                     </div>
                                 </td>
                                 <td>{{ $mutation->tanggal }}</td>

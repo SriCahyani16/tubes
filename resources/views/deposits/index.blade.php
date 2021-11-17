@@ -5,9 +5,9 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Data Setoran</h3>
+                <h3 class="card-title">Data Simpanan</h3>
                 <div class="card-options">
-                    <a href="{{ route('deposits.create') }}" class="btn btn-sm btn-pill btn-primary">Tambah Setoran</a>
+                    <a href="{{ route('deposits.create') }}" class="btn btn-sm btn-pill btn-primary">Tambah Simpanan</a>
                 </div>
             </div>
             <div class="card-body">

@@ -51,4 +51,8 @@ class Member extends Model
     {
         return $this->hasMany('App\Models\BankInterest', 'anggota_id');
     }
+    public function transaksi()
+    {
+        return $this->hasMany('App\Models\Transaksi', 'anggota_id');
+    }
 }

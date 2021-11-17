@@ -5,7 +5,7 @@
     <div class="col-10 offset-md-1">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Tambah Setoran</h3>
+                <h3 class="card-title">Tambah Simpanan</h3>
                 <div class="card-options">
                     <a href="{{ route('deposits.index') }}" class="btn btn-sm btn-pill btn-secondary">Kembali</a>
                 </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <div class="row align-items-center">
-                            <label class="col-sm-2">Jumlah Setoran</label>
+                            <label class="col-sm-2">Jumlah Simpanan</label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-prepend">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="card-footer text-right">
-                    <button type="submit" class="btn btn-primary">Tambah Setoran</button>
+                    <button type="submit" class="btn btn-primary">Tambah Simpanan</button>
                 </div>
             </form>
         </div>

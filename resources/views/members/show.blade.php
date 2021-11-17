@@ -14,7 +14,7 @@
             <table class="table card-table">
                 <tbody>
                     <tr>
-                        <td style="width: 25%;" class="text-muted">NIK</td>
+                        <td style="width: 25%;" class="text-muted">ID</td>
                         <td>{{ $member->nik }}</td>
                     </tr>
                     <tr>

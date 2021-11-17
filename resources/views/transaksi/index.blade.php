@@ -5,9 +5,9 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Data Anggota</h3>
+                <h3 class="card-title">Transaksi</h3>
                 <div class="card-options">
-                    <a href="{{ route('members.create') }}" class="btn btn-sm btn-pill btn-primary">Tambah Anggota</a>
+                    <a href="{{ route('deposits.create') }}" class="btn btn-sm btn-pill btn-primary">Tambah Transaksi</a>
                 </div>
             </div>
             <div class="card-body">
@@ -24,11 +24,12 @@
                         <thead>
                             <tr>
                                 <th class="w-1">No.</th>
-                                <th>ID</th>
-                                <th>Nama</th>
-                                <th>Pekerjaan</th>
-                                <th>No. Telp</th>
-                                <th>Saldo</th>
+                                <th>Anggota</th>
+                                <th>KG</th>
+                                <th>Total</th>
+                                <th>Simpanan Sukarela</th>
+                                <th>Keterangan</th>
+                                <th>Tanggal</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -46,14 +47,15 @@ require(['datatables', 'jquery'], function(datatable, $) {
     $('#datatable').DataTable({
         lengthChange: false,
         serverSide: true,
-        ajax: '{{ url('members/get-json') }}',
+        ajax: '{{ url('deposits/get-json') }}',
         columns: [
             { data: 'DT_RowIndex', name: 'DT_RowIndex' },
-            { data: 'nik', name: 'nik' },
-            { data: 'nama', name: 'nama' },
-            { data: 'pekerjaan', name: 'pekerjaan' },
-            { data: 'no_hp', name: 'no_hp' },
-            { data: 'saldo', name: 'saldo' },
+            { data: 'anggota', name: 'anggota' },
+            { data: 'kg', name: 'kg' },
+            { data: 'total', name: 'total' },
+            { data: 's_sukarela', name: 'sukarela' },
+            { data: 'keterangan', name: 'keterangan', orderable: false },
+            { data: 'tanggal', name: 'tanggal' },
             { data: 'action', name: 'action', orderable: false, searchable: false },
         ],
         language: {
@@ -65,12 +67,12 @@ require(['datatables', 'jquery'], function(datatable, $) {
                 className: "text-center"
             },
             {
-                targets: [5],
+                targets: [2],
                 className: "text-right"
             },
             {
-                targets: [6],
-                className: "text-right"
+                targets: [5],
+                className: "text-center"
             }
         ]
     });

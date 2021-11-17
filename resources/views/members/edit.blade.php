@@ -15,7 +15,7 @@
                 {{ method_field('PATCH') }}
                 <div class="card-body">
                     <div class="form-group">
-                        <label class="form-label">NIK</label>
+                        <label class="form-label">ID</label>
                         <input type="text" name="nik" class="form-control{{ $errors->has('nik') ? ' is-invalid' : '' }}" value="{{ old('nik', $member->nik) }}">
                         @if ($errors->has('nik'))
                             <span class="invalid-feedback">{{ $errors->first('nik') }}</span>

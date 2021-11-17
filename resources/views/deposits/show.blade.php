@@ -5,7 +5,7 @@
     <div class="col-10 offset-md-1">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Detail Setoran</h3>
+                <h3 class="card-title">Detail Simpanan</h3>
                 <div class="card-options">
                     <a href="{{ route('deposits.index') }}" class="btn btn-sm btn-pill btn-secondary">Kembali</a>
                 </div>
